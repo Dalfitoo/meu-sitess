@@ -1,8 +1,163 @@
-{
-	"folders": [
-		{
-			"path": "../agoraaaa"
-		}
-	],
-	"settings": {}
-}
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Marmi Grill</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #b71c1c;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #d32f2f;
+            text-align: center;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+        }
+
+        .pedido-form input,
+        .pedido-form select,
+        .pedido-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .pedido-form button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pedido-form button:hover {
+            background-color: #b71c1c;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Restaurante Marmi Grill</header>
+    <nav>
+        <a href="#menu">Cardápio</a>
+        <a href="#pedido">Fazer Pedido</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container" id="menu">
+        <h2>Cardápio</h2>
+        <div class="menu-item">
+            <span>Churrasco Misto</span>
+            <span>R$ 49,90</span>
+        </div>
+        <div class="menu-item">
+            <span>Picanha Grelhada</span>
+            <span>R$ 59,90</span>
+        </div>
+        <div class="menu-item">
+            <span>Frango à Parmegiana</span>
+            <span>R$ 39,90</span>
+        </div>
+    </div>
+    <div class="container" id="pedido">
+        <h2>Faça seu Pedido</h2>
+        <form class="pedido-form">
+            <label for="prato">Escolha o prato:</label>
+            <select id="prato" name="prato">
+                <option value="churrasco">Churrasco Misto - R$ 49,90</option>
+                <option value="picanha">Picanha Grelhada - R$ 59,90</option>
+                <option value="parmegiana">Frango à Parmegiana - R$ 39,90</option>
+            </select>
+            <label for="pagamento">Forma de Pagamento:</label>
+            <select id="pagamento" name="pagamento">
+                <option value="pix">Pix</option>
+                <option value="cartao">Cartão de Crédito/Débito</option>
+                <option value="dinheiro">Dinheiro</option>
+            </select>
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes"
+                placeholder="Ex.: sem cebola, carne bem passada..."></textarea>
+            <button type="submit">Finalizar Pedido</button>
+        </form>
+    </div>
+    <div class="container" id="contato">
+        <h2>Contato e Localização</h2>
+        <p><strong>Endereço:</strong>Estr. Bragantina, 1018 - Jardim Santo Antonio I, Campo Limpo Paulista - SP, 13232
+        </p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        <p><strong>Horário de Funcionamento:</strong> 10h às 14h</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.576598403225!2d-46.7659109!3d-23.2085741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cede8985e5e995%3A0x7554fb8664fb5432!2sRestaurante%20Marmi%20Grill!5e0!3m2!1sen!2sbr!4v1614251542172!5m2!1sen!2sbr"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <footer>
+        &copy; 2025 Restaurante Marmi Grill - Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
